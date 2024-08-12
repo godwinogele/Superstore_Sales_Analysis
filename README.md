@@ -14,3 +14,5 @@ This repository contains a collection of SQL queries designed to analyze sales d
 - [Sales by Ship Mode](#sales-by-ship-mode)
 - [Customer Analysis](#customer-analysis)
 - [Geographic Analysis](#geographic-analysis)
+
+- [Total Sales Analysis](#Sales Analysis Queries.sql)
