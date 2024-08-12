@@ -15,4 +15,4 @@ This repository contains a collection of SQL queries designed to analyze sales d
 - [Customer Analysis](#customer-analysis)
 - [Geographic Analysis](#geographic-analysis)
 
-- [Total Sales Analysis](#SalesAnalysisQueries.sql)
+- [Sales Analysis Queries.sql](#SalesAnalysisQueries.sql)
