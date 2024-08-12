@@ -16,9 +16,32 @@ This repository contains a collection of SQL queries designed to analyze sales d
 - [Geographic Analysis](#geographic-analysis)
 
 
-## Total Sales Analysis
+**Sales AnaLysis**
+----Total Sales Analysis:
+---Calculate total sales revenue over a given period.
+---Calculate total sales revenue over a given period.
+SELECT SUM(Sales) AS Total_Sales
+FROM SalesData;
 
-1. **Total Sales Revenue Over a Given Period**
-   ```sql
-   SELECT SUM(Sales) AS Total_Sales
-   FROM SalesData;
+---Compare sales revenue across different regions, states, and cities.
+--Sales across different regions
+SELECT Region, SUM (Sales) As Sales
+FROM SalesData
+GROUP BY Region;
+
+--Sales across different states
+SELECT State, SUM (Sales) As Sales
+FROM SalesData
+GROUP BY State;
+
+--Sales across different cities
+SELECT City, SUM (Sales) As Sales
+FROM SalesData
+GROUP BY City;
+
+--Analyze sales performance and customer distribution across different geographic regions.
+SELECT Segment, SUM(Sales) AS Total_Sales
+FROM SalesData
+GROUP BY Segment
+ORDER BY Total_Sales
+DESC;
